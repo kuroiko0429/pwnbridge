@@ -1,0 +1,18 @@
+[Unit]
+Description=Pwnbridge authenticated Pwnagotchi telemetry (session D-Bus)
+
+[Service]
+Type=dbus
+BusName=io.github.kuroiko.Pwnbridge1
+ExecStart=%h/.local/bin/pwnbridge daemon
+Restart=always
+RestartSec=3s
+TimeoutStopSec=10s
+KillMode=control-group
+UMask=0077
+NoNewPrivileges=true
+LockPersonality=true
+RestrictSUIDSGID=true
+
+[Install]
+WantedBy=default.target

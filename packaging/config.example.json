@@ -1,0 +1,16 @@
+{
+  "username": "pi",
+  "identity_file": "/home/example/.ssh/id_ed25519",
+  "host_key_alias": "10.12.194.1",
+  "remote_agent": "/usr/local/bin/pwnbridge-agent",
+  "endpoints": [
+    {"name": "bluetooth", "address": "10.77.0.2", "interface": "pwnpan0"},
+    {"name": "usb", "address": "10.12.194.1", "interface": ""}
+  ],
+  "poll_interval": "1s",
+  "stale_after": "5s",
+  "retry_interval": "2s",
+  "idle_timeout": "4s",
+  "rpc_timeout": "8s",
+  "bluetooth_healthy_frames": 3
+}

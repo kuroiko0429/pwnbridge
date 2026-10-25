@@ -1,0 +1,16 @@
+[
+  ["{\"Op\":\"clear_override\"}", false],
+  ["{\"op\":\"set_face\",\"Face\":\"x\",\"ttl_seconds\":1}", false],
+  ["{\"op\":\"set_message\",\"Message\":\"x\",\"ttl_seconds\":1}", false],
+  ["{\"op\":\"set_face\",\"face\":\"\\ud800\",\"ttl_seconds\":1}", false],
+  ["{\"op\":\"set_face\",\"face\":\"\\udc00\",\"ttl_seconds\":1}", false],
+  ["{\"op\":\"set_face\",\"face\":\"\\ud800\\u0041\",\"ttl_seconds\":1}", false],
+  ["{\"op\":\"set_face\",\"face\":\"\\ud83d\\ude00\",\"ttl_seconds\":1}", true],
+  ["{\"op\":\"set_face\",\"face\":\"\\\\ud800\",\"ttl_seconds\":1}", true],
+  ["{\"op\":\"set_face\",\"face\":null,\"ttl_seconds\":1}", false],
+  ["{\"op\":\"set_face\",\"face\":[],\"ttl_seconds\":1}", false],
+  ["{\"op\":\"set_face\",\"ttl_seconds\":true}", false],
+  ["{\"op\":\"set_face\",\"ttl_seconds\":1.0}", false],
+  ["{\"op\":\"set_face\",\"ttl_seconds\":1}", true],
+  ["{\"op\":\"clear_override\"}", true]
+]

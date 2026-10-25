@@ -1,0 +1,11 @@
+[Unit]
+Description=Retry Pwnbridge Bluetooth PAN when the laptop returns
+
+[Timer]
+OnBootSec=20s
+OnUnitInactiveSec=15s
+AccuracySec=1s
+Unit=pwnbridge-pan.service
+
+[Install]
+WantedBy=timers.target

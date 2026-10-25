@@ -1,0 +1,15 @@
+/bin/
+__pycache__/
+*.py[cod]
+*.test
+/coverage.out
+/.private/
+/docs/*verification*.json
+/docs/live-*.json
+/docs/usb-transport-observation.json
+/.env
+/.env.*
+/config.json
+*.pem
+*.key
+/.venv/
